@@ -1,11 +1,6 @@
 [wordpress]
-103.56.156.6 web1
-xxx.xx.xxx.x web2
+103.56.156.6
+[web1]
+103.56.156.6
+[web2]
 
-[loadbalancer]
-xxx	load1
-xxx	load2
-
-[database]
-xxx	db1
-xxx	db2

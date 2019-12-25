@@ -10,15 +10,18 @@
   roles:
     - server
     - php
+    - glusterFS
+- hosts: web1 
+
+  roles:
     - wordpress
+      #- hosts: loadbalancer
 
-- hosts: loadbalancer
-
-  roles:
-    - HAproxy
-    - heartbeat 
+      #  roles:
+      #    - HAproxy
+      #    - heartbeat 
  
-- hosts: database
+      #- hosts: database
   
-  roles:
-    - mysql
+      # roles:
+      # - mysql
