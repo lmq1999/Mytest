@@ -1,0 +1,15 @@
+---
+# vars file for heartbeat
+VIP: 
+
+password: password 
+
+load_hostname:
+
+load_ip:
+
+interface: eth1
+
+web1_hostname:
+
+web2_hostname: 

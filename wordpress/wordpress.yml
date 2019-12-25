@@ -1,0 +1,24 @@
+- hosts: all
+  gather_facts: False
+  
+  tasks:
+  - name: install python 2
+    raw: test -e /usr/bin/python || (apt -y update && apt install -y python-minimal)
+
+- hosts: wordpress
+
+  roles:
+    - server
+    - php
+    - wordpress
+
+- hosts: loadbalancer
+
+  roles:
+    - HAproxy
+    - heartbeat 
+ 
+- hosts: database
+  
+  roles:
+    - mysql

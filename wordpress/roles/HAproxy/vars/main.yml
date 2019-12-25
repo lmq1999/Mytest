@@ -1,0 +1,12 @@
+---
+# vars file for HAproxy
+
+web1_hostname:
+
+web2_hostname:
+
+web1_ip:
+
+web2_ip:
+
+VIP:
