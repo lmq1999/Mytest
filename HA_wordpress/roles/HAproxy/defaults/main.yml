@@ -7,3 +7,4 @@ web1_hostname: web1
 web2_hostname: web2 
 web1_ip: 192.168.122.209
 web2_ip: 192.168.122.36
+port: 80

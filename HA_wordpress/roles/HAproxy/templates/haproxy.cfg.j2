@@ -20,7 +20,7 @@ global
 
 defaults
         log     global
-        mode    {{ protocol }} 
+        mode    {{ protocol }}
         option  tcplog
         option  dontlognull
         timeout connect 5000
@@ -38,8 +38,8 @@ frontend www
    bind {{ VIP }}:{{ port }}
    default_backend {{ backend }}
 
-backend wordpress-backend
+backend {{backend}}
    balance roundrobin
    mode {{ protocol }} 
-   server {{ web1_hostname }} {{ web1_ip }}:{{ port} } check
+   server {{ web1_hostname }} {{ web1_ip }}:{{ port }} check
    server {{ web2_hostname }} {{ web2_ip }}:{{ port }} check

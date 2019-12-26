@@ -12,16 +12,19 @@
      line: net.ipv4.ip_nonlocal_bind=1
 
 - name: Update ha.cf config
-  template: src=ha.cf.j2
-         dest=/etc/ha.d/ha.cf
-         backup=yes
+  template: 
+    src: ha.cf.j2
+    dest: /etc/ha.d/ha.cf
+    backup: yes
 
 - name: Update haresources config
-  template: src=haresources.j2
-         dest=/etc/ha.d/haresources
-         backup=yes
-
+  template: 
+    src: haresources.j2
+    dest: /etc/ha.d/haresources
+    backup: yes
+   
 - name: Update authkeys config
-  template: src=authkeys.j2
-         dest=/etc/ha.d/authkeys
-         backup=yes
+  template: 
+    src: authkeys.j2 
+    dest: /etc/ha.d/authkeys
+    mode: 0600
