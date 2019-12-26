@@ -9,4 +9,13 @@
 
   roles:
     - HAproxy
+
+- hosts: lb1
+
+  roles:
+    - heartbeat
+
+- hosts: lb2
+
+  roles:
     - heartbeat
