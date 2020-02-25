@@ -1,1 +1,46 @@
-<mxfile host="www.draw.io" modified="2020-02-25T04:10:22.204Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:73.0) Gecko/20100101 Firefox/73.0" version="12.7.4" etag="pept_Ro2J76dZEVa_N_E" type="github"><diagram id="B4dqOjSruufj3jXwflzh">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="www.draw.io" modified="2020-02-25T04:14:17.829Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:73.0) Gecko/20100101 Firefox/73.0" etag="eWk9Ecp0Ine_-xJnuKn3" version="12.7.4" type="github">
+  <diagram id="B4dqOjSruufj3jXwflzh" name="Page-1">
+    <mxGraphModel dx="1355" dy="776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6xl5Q3oqVe3miwaUmFHH-3" value="ceph-deploy" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6xl5Q3oqVe3miwaUmFHH-4" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="6xl5Q3oqVe3miwaUmFHH-3" target="6xl5Q3oqVe3miwaUmFHH-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="420" as="sourcePoint" />
+            <mxPoint x="440" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6xl5Q3oqVe3miwaUmFHH-5" value="&lt;div&gt;ceph1&lt;/div&gt;&lt;div&gt;- mon&lt;/div&gt;&lt;div&gt;- osd&lt;/div&gt;&lt;div&gt;- rgw&lt;/div&gt;&lt;div&gt;- mgr&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="120" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6xl5Q3oqVe3miwaUmFHH-6" value="&lt;div&gt;ceph2&lt;/div&gt;&lt;div&gt;- mon&lt;/div&gt;&lt;div&gt;- osd&lt;/div&gt;&lt;div&gt;- mgr&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="280" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6xl5Q3oqVe3miwaUmFHH-7" value="&lt;div&gt;ceph3&lt;/div&gt;&lt;div&gt;- mon&lt;/div&gt;&lt;div&gt;- osd&lt;/div&gt;&lt;div&gt;- mgr&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="440" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6xl5Q3oqVe3miwaUmFHH-8" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="6xl5Q3oqVe3miwaUmFHH-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="320" as="sourcePoint" />
+            <mxPoint x="450" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6xl5Q3oqVe3miwaUmFHH-9" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="6xl5Q3oqVe3miwaUmFHH-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="480" as="sourcePoint" />
+            <mxPoint x="450" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6xl5Q3oqVe3miwaUmFHH-10" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="480" as="sourcePoint" />
+            <mxPoint x="280" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
